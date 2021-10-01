@@ -9,6 +9,6 @@ $(document).ready(function() {
    } else {
      audio.pause();
    }
-    $(this).toggleClass("btn-secondary");
+    $(this).button("toggle");
 });
 });
