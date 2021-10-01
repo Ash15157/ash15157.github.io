@@ -9,5 +9,6 @@ $(document).ready(function() {
    } else {
      audio.pause();
    }
+    $(this).toggleClass("btn-secondary");
 });
 });
