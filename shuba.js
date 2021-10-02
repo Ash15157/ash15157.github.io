@@ -9,7 +9,6 @@ $(document).ready(function() {
    } else {
      audio.pause();
    }
-    $(this).button("toggle");
-    $("#icon").toggleClass("bi-volume-up").toggleClass("bi-volume-mute");
+    $("#icon").toggleClass("bi-volume-mute").toggleClass("bi-volume-up");
 });
 });
