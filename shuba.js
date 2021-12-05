@@ -14,10 +14,10 @@ $(document).ready(function() {
 });
   
   $("#shubaNoise").on("click",function(){
-    if(audio.paused) {
-     audio.play();
+    if(noise.paused) {
+     noise.play();
    } else {
-     audio.pause();
+     noise.pause();
    }
   });
 });
