@@ -1,6 +1,6 @@
 $(document).ready(function() {
                 const audio = document.querySelector("#song");
-                audio.volume = 0.8;
+                audio.volume = 0.5;
                 const noise = document.querySelector("#noise");
                 noise.volume = 0.5;
   
