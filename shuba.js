@@ -1,7 +1,8 @@
 $(document).ready(function() {
-                const audio = document.querySelector("audio");
+                const audio = document.querySelector("#song");
                 audio.volume = 0.8;
-                audio.play();
+                const noise = document.querySelector("#noise");
+                noise.volume = 0.5;
   
   $( "#volume" ).on( "click", function() {
    if(audio.paused) {
@@ -11,4 +12,12 @@ $(document).ready(function() {
    }
     $("#icon").toggleClass("bi-volume-mute").toggleClass("bi-volume-up");
 });
+  
+  $("#shubaNoise").on("click",function(){
+    if(audio.paused) {
+     audio.play();
+   } else {
+     audio.pause();
+   }
+  });
 });
