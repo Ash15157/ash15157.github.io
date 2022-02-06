@@ -48,5 +48,6 @@ function volumeChange(val){
         audio.play();
         $("#icon").removeClass("bi-volume-mute");
         $("#icon").addClass("bi-volume-up");
+      //yes.
     }
 }
