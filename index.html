@@ -26,9 +26,25 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-		      <button type="button" id="volume" class="btn btn-secondary">
-			    <i id="icon" class="bi bi-volume-mute"></i>
-			   </button>
+				<!-- <div class="pl-2">
+					<button type="button" id="volume" class="btn btn-secondary">
+						<i id="icon" class="bi bi-volume-mute"></i>
+					</button>
+				</div> -->
+				<div id="navbarDiv">
+					<button type="button" id="volume" class="btn btn-secondary">
+						<i id="icon" class="bi bi-volume-mute"></i>
+					</button>
+					<input type="range" class="form-range" id="volumeSlider" min="0" max="100" oninput="volumeChange(this.value)" onchange="volumeChange(this.value)" value="0"></input>
+					<button type="button" id="petDuckButton" class="btn btn-secondary pb-2">
+						Pet Duck
+					</button>
+				</div>
+				<!-- <div id="petDuckDiv" class="pl-2">
+					<button type="button" id="petDuckButton" class="btn btn-secondary">
+						Pet Duck
+					</button>
+				</div> -->
 		    </div>
 		  </div>
 		</nav>
