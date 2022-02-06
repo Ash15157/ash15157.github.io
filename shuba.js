@@ -57,5 +57,6 @@ function volumeChange(val){
         //controls the look of the volume button
         $("#icon").removeClass("bi-volume-mute");
         $("#icon").addClass("bi-volume-up");
+      //yes.
     }
 }
