@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	<!--Ash15157, HeyVsauceBaxterHere-->
+	<!--Ash15157-->
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,7 @@
 	</head>
 
 	<body>
+		<!--Set up of Navbar-->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  <a class="navbar-brand" href="#">Welcome To ShubaDucc</a>
 		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,34 +27,34 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
-				<!-- <div class="pl-2">
-					<button type="button" id="volume" class="btn btn-secondary">
-						<i id="icon" class="bi bi-volume-mute"></i>
-					</button>
-				</div> -->
+				<!--The div containing all the Navbar components-->
 				<div id="navbarDiv">
+
+					<!--button for volume-->
 					<button type="button" id="volume" class="btn btn-secondary">
 						<i id="icon" class="bi bi-volume-mute"></i>
 					</button>
+
+					<!--Range slider for volume-->
 					<input type="range" class="form-range" id="volumeSlider" min="0" max="100" oninput="volumeChange(this.value)" onchange="volumeChange(this.value)" value="0"></input>
-					<button type="button" id="petDuckButton" class="btn btn-secondary pb-2">
+					<button type="button" id="petDuckButton" class="btn btn-secondary pb-2 duckNoise">
 						Pet Duck
 					</button>
+
 				</div>
-				<!-- <div id="petDuckDiv" class="pl-2">
-					<button type="button" id="petDuckButton" class="btn btn-secondary">
-						Pet Duck
-					</button>
-				</div> -->
 		    </div>
 		  </div>
 		</nav>
-		 <div class="container centerPretty" id="shubaNoise">
+
+		<!--gif of the dancing duck-->
+		 <div class="container centerPretty duckNoise pt-5" id="shubaNoise">
 			<img class="img-fluid" src="shuba-duck.gif" alt="Dancing duck!" width="760" height="428">
 		</div> 
 		
-		
+		<!--Hey Ya! by Outkast-->
 		<audio id="song" src="HeyYa.mp3" loop="loop"></audio>
+
+		<!--Duck noises-->
 		<audio id="noise" src="ShubaShubaShuba.mp3"></audio>
 
 
