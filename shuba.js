@@ -46,7 +46,7 @@ $(document).ready(function() {
 
   })
 
-    //Changes song to Oozora Subaru's BGM
+    //Changes song to Oozora Subaru's BGM https://www.youtube.com/watch?v=IFVbkGqgqFs
     $("#BGM").on("click",function(){
         muteSong();
         $("#volumeSlider").val(0.0);
