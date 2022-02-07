@@ -31,17 +31,26 @@
 				<div id="navbarDiv">
 
 					<!--button for volume-->
-					<button type="button" id="volume" class="btn btn-secondary">
+					<button type="button" id="volume" class="btn btn-secondary nav-item">
 						<i id="icon" class="bi bi-volume-mute"></i>
 					</button>
 
 					<!--Range slider for volume-->
-					<input type="range" class="form-range" id="volumeSlider" min="0" max="100" oninput="volumeChange(this.value)" onchange="volumeChange(this.value)" value="0"></input>
+					<input type="range" class="form-range nav-item" id="volumeSlider" min="0" max="100" oninput="volumeChange(this.value)" onchange="volumeChange(this.value)" value="0"></input>
 					<button type="button" id="petDuckButton" class="btn btn-secondary pb-2 duckNoise">
 						Pet Duck
 					</button>
-
 				</div>
+
+				<div class="btn-group dropdown pl-lg-2 pt-2 pt-sm-0">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Songs
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" id="heyYa" href="#">Hey Ya!</a>
+							<a class="dropdown-item" id="BGM" href="#">Shuba BGM</a>
+						</div>
+					</div>
 		    </div>
 		  </div>
 		</nav>
@@ -51,7 +60,7 @@
 			<img class="img-fluid" src="shuba-duck.gif" alt="Dancing duck!" width="760" height="428">
 		</div> 
 		
-		<!--Hey Ya! by Outkast-->
+		<!--The song that is going to be playing in the background of the website-->
 		<audio id="song" src="HeyYa.mp3" loop="loop"></audio>
 
 		<!--Duck noises-->

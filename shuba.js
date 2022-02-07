@@ -38,20 +38,33 @@ $(document).ready(function() {
    }
   });
 
+  //Changes the song to Hey Ya!
+  $("#heyYa").on("click",function(){
+      muteSong();
+      $("#volumeSlider").val(0.0);
+      $("#song").attr("src","HeyYa.mp3");
+
+  })
+
+    //Changes song to Oozora Subaru's BGM
+    $("#BGM").on("click",function(){
+        muteSong();
+        $("#volumeSlider").val(0.0);
+        $("#song").attr("src","ShubaBGM.mp3");
+
+    })
+
 
 
 });
 
-/* Changes the volume of the song Hey Ya! Outkast*/
+/* Changes the volume of the song*/
 function volumeChange(val){
     //volume is from a range of 0.0 to 1.0, so we need to convert the value obtained from the range.
     let audioVolume = val/100;
     audio.volume = audioVolume;
     if(audioVolume === 0.0){
-        audio.pause();
-        //controls the look of the volume button
-        $("#icon").removeClass("bi-volume-up");
-        $("#icon").addClass("bi-volume-mute");
+        muteSong();
     } else {
         audio.play();
         //controls the look of the volume button
@@ -59,4 +72,13 @@ function volumeChange(val){
         $("#icon").addClass("bi-volume-up");
       //yes.
     }
+}
+
+/*General function to pause the song and change the volume button icon*/
+function muteSong(){
+    //pauses song
+    audio.pause();
+    //controls the look of the volume button
+    $("#icon").removeClass("bi-volume-up");
+    $("#icon").addClass("bi-volume-mute");
 }
