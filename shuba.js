@@ -29,7 +29,7 @@ $(document).ready(function() {
      noise.play();
 
      //adds the hand patting DOM element for 2500 milliseconds or 2.5 seconds.
-     $("#shubaNoise").prepend(" <img class=\"img-fluid handPattingCSS\" src=\"petpet.gif\" id=\"pattingHand\" alt=\"patting hand\">");
+     $("#shubaNoise").prepend(" <img class=\"img-fluid handPattingCSS smallHand\" src=\"petpet.gif\" id=\"pattingHand\" alt=\"patting hand\">");
      setTimeout(function(){
          $("#pattingHand").remove();
         },2500)
